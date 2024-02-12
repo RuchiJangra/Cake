@@ -1,0 +1,123 @@
+.fa-1x {
+  font-size: 1.5rem;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.cake-shop {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 1rem;
+  font-weight: 1rem;
+  color: #580b29;
+  margin-bottom: 5px;
+}
+.image-cakelogo {
+  margin-bottom: 5px;
+  width: 50px;
+}
+.navbar-brand {
+  color: #580b29;
+  font-family: "Dancing Script", "Roboto", sans-serif;
+}
+
+.navbar-brand:hover {
+  color: rgb(160, 67, 104);
+  transform: translate(-5px);
+}
+
+.navbar-nav {
+  margin-top: 10px;
+  /* Add margin to create space above the list items */
+}
+
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+
+#navbar {
+  background-color: rgb(197, 174, 180);
+  min-height: 50px;
+  position: sticky;
+  /* padding-left: 50px; */
+}
+
+.navbar-toggler-icon {
+  /* Your styles here */
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  color: #918a85;
+}
+
+.navbar-toggler {
+  border: none;
+  z-index: 1500; /* Remove border from the toggler button */
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 10px;
+  font-family: "Dancing Script", "Pacifico", "Great Vibes";
+  font-weight: bold;
+  color: rgb(107, 40, 40);
+  margin-right: 2px;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(160, 67, 104);
+  transform: translate(-5px);
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+  padding-left: 50px;
+  overflow: hidden;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar-coll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.image-hero {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Optional: This property ensures the image covers the entire container while maintaining its aspect ratio */
+}
+
+.main-hero {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.icons {
+  margin-left: 30px;
+}
+
+.icons img {
+  margin-left: 5px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: translateY(-5px);
+}
