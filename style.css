@@ -11,7 +11,7 @@ body {
 .cake-shop {
   font-family: "Great Vibes", sans-serif;
   font-size: 1rem;
-  font-weight: 1rem;
+  font-weight: normal;
   color: #580b29;
   margin-bottom: 5px;
 }
@@ -31,29 +31,25 @@ body {
 
 .navbar-nav {
   margin-top: 10px;
-  /* Add margin to create space above the list items */
-}
-
-.navbar-toggler.toggler-example {
-  cursor: pointer;
 }
 
 #navbar {
   background-color: rgb(197, 174, 180);
   min-height: 50px;
   position: sticky;
-  /* padding-left: 50px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-toggler-icon {
-  /* Your styles here */
-  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-size: 1.5rem;
   color: #918a85;
 }
 
 .navbar-toggler {
   border: none;
-  z-index: 1500; /* Remove border from the toggler button */
+  z-index: 1500;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -75,12 +71,6 @@ body {
   overflow: hidden;
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #navbar-coll {
   display: flex;
   justify-content: space-between;
@@ -94,9 +84,8 @@ body {
 .image-hero {
   max-width: 100%;
   max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover; /* Optional: This property ensures the image covers the entire container while maintaining its aspect ratio */
+
+  object-fit: cover;
 }
 
 .main-hero {
@@ -120,4 +109,60 @@ body {
 
 .icons img:hover {
   transform: translateY(-5px);
+}
+@media screen and (max-width: 330px) {
+  #logo {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #navbar-coll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.home {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  color: rgb(160, 67, 104);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  white-space: nowrap;
+  animation: textAnimation 8s infinite linear;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(70%);
+  }
+}
+
+.image-hero {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    transform: none;
+    margin-top: 20px;
+  }
 }
